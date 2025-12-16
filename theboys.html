@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Boys | Quotes & Season 5</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0b0b0b, #1a0000);
+            color: #f2f2f2;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: radial-gradient(circle, #b30000, #000);
+            border-bottom: 3px solid #ff0000;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ffcccc;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .character {
+            position: relative;
+            margin-bottom: 50px;
+            padding: 30px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.75);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+            overflow: hidden;
+            transition: 0.4s ease;
+        }
+
+        /* BLOOD HOVER GLOW */
+        .character:hover {
+            box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+        }
+
+        /* BLOOD DRIP EFFECT */
+        .character::after {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                rgba(255,0,0,0.8),
+                rgba(255,0,0,0.3),
+                transparent
+            );
+            transition: 0.5s;
+            opacity: 0;
+        }
+
+        .character:hover::after {
+            top: 0;
+            opacity: 1;
+        }
+
+        .character h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .butcher h2 {
+            color: #ff4d4d;
+        }
+
+        .homelander h2 {
+            color: #4da6ff;
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            margin: 15px 0;
+            padding-left: 20px;
+            border-left: 4px solid #ff0000;
+            font-style: italic;
+            transition: 0.3s;
+            position: relative;
+        }
+
+        /* QUOTE BLOOD HOVER */
+        .quote:hover {
+            color: #ff3333;
+            text-shadow: 0 0 8px red;
+            transform: translateX(5px);
+        }
+
+        .homelander .quote {
+            border-left: 4px solid #3399ff;
+        }
+
+        .release-info {
+            margin-top: 40px;
+            padding: 25px;
+            border: 2px solid #880000;
+            background: rgba(20, 0, 0, 0.9);
+            text-align: center;
+            font-size: 1.4rem;
+            color: #ffdddd;
+            font-weight: bold;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* RELEASE BLOOD ANIMATION */
+        .release-info:hover {
+            box-shadow: 0 0 30px red;
+        }
+
+        .release-info::before {
+            content: "🩸";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            font-size: 2rem;
+            animation: drip 2s infinite;
+        }
+
+        @keyframes drip {
+            0% { transform: translate(-50%, 0); opacity: 1; }
+            100% { transform: translate(-50%, 80px); opacity: 0; }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        footer span {
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>THE BOYS</h1>
+    <p>Heroes don’t exist. Power does.</p>
+</header>
+
+<div class="container">
+
+    <!-- Billy Butcher -->
+    <div class="character butcher">
+        <h2>Billy Butcher</h2>
+
+        <div class="quote">"Diabolical."</div>
+        <div class="quote">"You’re not the real heroes. You’re just a bunch of walking PR disasters."</div>
+        <div class="quote">"Scorched earth, mate."</div>
+        <div class="quote">"I’m not a good guy. I’m the guy you call when you need bad things done."</div>
+    </div>
+
+    <!-- Homelander -->
+    <div class="character homelander">
+        <h2>Homelander</h2>
+
+        <div class="quote">"I’m the Homelander. And I can do whatever the fook I want."</div>
+        <div class="quote">"You need me to save you."</div>
+        <div class="quote">"They love me. I’m the real hero."</div>
+        <div class="quote">"I’m stronger. I’m smarter. I’m better."</div>
+    </div>
+
+    <!-- Release Info -->
+    <div class="release-info">
+        📅 The Boys Season 5 releases on <strong>April 8, 2026</strong><br>
+        Final season. No heroes. Just blood.
+    </div>
+
+</div>
+
+<footer>
+    Fan-made tribute to <span>The Boys</span>
+</footer>
+
+</body>
+</html>
